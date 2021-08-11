@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 
-import styles from "./styles.module.scss";
+import "./styles.module.scss";
 import logo from "./big-logo.svg";
 
 /*
@@ -22,10 +22,10 @@ import logo from "./big-logo.svg";
 
 const SiteNavbar = () => {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="lg" sticky="top">
       <Container>
         <Navbar.Brand href="#home">
-          <img src={logo} height="60rem" alt="Berkeley Investment Group" />
+          <img src={logo} height="50rem" alt="Berkeley Investment Group" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

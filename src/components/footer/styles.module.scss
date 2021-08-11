@@ -1,0 +1,51 @@
+@import "src/App.scss";
+
+.footer {
+  width: 100%;
+  padding: {
+    top: 2rem;
+    bottom: 2rem;
+    left: 4rem;
+    right: 4rem;
+  }
+  background: $blue-800;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: white;
+
+  &-left {
+    display: flex;
+
+    h1 {
+      font-size: 4rem;
+      margin-right: 15px;
+    }
+
+    p {
+      max-width: 35rem;
+    }
+  }
+
+  &-right {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    h5 {
+      align-self: flex-start;
+    }
+
+    &-smlinks {
+      margin-left: 15px;
+      height: 110px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      img {
+        width: 30px;
+      }
+    }
+  }
+}
